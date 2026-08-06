@@ -22,8 +22,7 @@
             gap: 10px;
         }
 
-        .navbar a,
-        .dropbtn {
+        .navbar a {
             color: white;
             text-decoration: none;
             padding: 8px 14px;
@@ -31,50 +30,11 @@
             font-weight: bold;
             border-radius: 4px;
             transition: background-color .2s;
-            border: none;
-            background: none;
-            cursor: pointer;
-            font-family: inherit;
         }
 
-        .navbar a:hover,
-        .dropbtn:hover {
+        .navbar a:hover {
             background-color: #34495e;
             color: #f1c40f;
-        }
-
-        /* Dropdown */
-
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #2c3e50;
-            min-width: 220px;
-            box-shadow: 0 8px 16px rgba(0,0,0,.2);
-            z-index: 1000;
-        }
-
-        .dropdown-content a {
-            display: block;
-            padding: 12px 16px;
-            color: white;
-            text-decoration: none;
-            font-size: 13px;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #34495e;
-            color: #f1c40f;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
         }
 
         /* Page Content */
@@ -109,19 +69,7 @@
 
     <a href="methodology.html">Methodology</a>
 
-    <div class="dropdown">
-
-        <button class="dropbtn">
-            Metadata Records ▼
-        </button>
-
-        <div class="dropdown-content">
-            <a href="metadata-records.html#dublin-core">Dublin Core</a>
-            <a href="metadata-records.html#mods">MODS</a>
-            <a href="metadata-records.html#vra-core">VRA Core</a>
-        </div>
-
-    </div>
+    <a href="metadata-records.html">Metadata Records</a>
 
     <a href="digital-humanities.html">Digital Humanities</a>
 
