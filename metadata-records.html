@@ -10,7 +10,6 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f5f5f5;
-            color: #333;
         }
 
         /* Navigation Bar */
@@ -37,10 +36,10 @@
             color: #f1c40f;
         }
 
-        /* Main Container */
+        /* Page Content */
         .content {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 50px auto;
             padding: 30px;
             background: white;
             border-radius: 8px;
@@ -49,94 +48,10 @@
 
         h1 {
             color: #2c3e50;
-            margin-bottom: 5px;
         }
 
-        .subtitle {
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        /* Tab Navigation Controls */
-        .tab-container {
-            display: flex;
-            border-bottom: 2px solid #2c3e50;
-            gap: 5px;
-            margin-bottom: 20px;
-        }
-
-        .tab-btn {
-            background-color: #e2e8f0;
-            color: #2c3e50;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 6px 6px 0 0;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .tab-btn:hover {
-            background-color: #cbd5e1;
-        }
-
-        .tab-btn.active {
-            background-color: #2c3e50;
-            color: white;
-        }
-
-        /* Tab Content Display */
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        /* Dublin Core Table Layout */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th, td {
-            text-align: left;
-            padding: 12px 14px;
-            border-bottom: 1px solid #e2e8f0;
-            vertical-align: top;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-
-        th {
-            background-color: #f8fafc;
-            width: 25%;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        /* Code display block for MODS/XML */
-        pre {
-            background-color: #282c34;
-            color: #abb2bf;
-            padding: 18px;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 13px;
-            line-height: 1.4;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        p {
+            color: #555;
         }
     </style>
 </head>
@@ -154,166 +69,9 @@
 </nav>
 
 <div class="content">
-
     <h1>Metadata Records</h1>
-    <p class="subtitle">Item Record: <strong>Bari / Abandoned Princess (바리공주)</strong></p>
-
-    <!-- Tab Buttons -->
-    <div class="tab-container">
-        <button class="tab-btn active" onclick="openTab(event, 'dublin-core')">Dublin Core</button>
-        <button class="tab-btn" onclick="openTab(event, 'mods')">MODS</button>
-        <button class="tab-btn" onclick="openTab(event, 'vra-core')">VRA Core</button>
-    </div>
-
-    <!-- TAB 1: DUBLIN CORE -->
-    <div id="dublin-core" class="tab-content active">
-        <table>
-            <tr>
-                <th>dc:title</th>
-                <td>Bari / Abandoned Princess (바리공주)</td>
-            </tr>
-            <tr>
-                <th>dc:creator</th>
-                <td>Cho Dong-il, Chang Won-chul, Suh Yong-sook, Shin Eun-kyung, and Lee Jong-ju (조동일, 장원철, 서영숙, 신은경, 이종주)</td>
-            </tr>
-            <tr>
-                <th>dc:subject</th>
-                <td>Shamanic Songs; Princess Bari; Korean Shamanism; Oral Literature (무가, 바리공주, 한국 무속신앙, 구비문학)</td>
-            </tr>
-            <tr>
-                <th>dc:description</th>
-                <td>
-                    A shamanic song about the journey of Princess Bari to save her parents, even though she was abandoned by them at birth. 
-                    <br><br>
-                    <a href="https://www.youtube.com/watch?v=zRT3Lt0ooKA" target="_blank" rel="noopener noreferrer">Watch / Listen on YouTube</a>
-                </td>
-            </tr>
-            <tr>
-                <th>dc:publisher</th>
-                <td>The Academy of Korean Studies (AKS) (한국 구비문학 대계)</td>
-            </tr>
-            <tr>
-                <th>dc:contributor</th>
-                <td>Song Bum-im (송분임)</td>
-            </tr>
-            <tr>
-                <th>dc:date</th>
-                <td>1981-10-09</td>
-            </tr>
-            <tr>
-                <th>dc:type</th>
-                <td>Korean shamanic song (무가)</td>
-            </tr>
-            <tr>
-                <th>dc:format</th>
-                <td>Text/Audio (글/오디오)</td>
-            </tr>
-            <tr>
-                <th>dc:identifier</th>
-                <td>Primary System ID: POKS.GUBI.GUBI.1_7694 / Local Code: Gampo-eup Muga 2 (감포읍 무가 2) / Tape Number: T. Gampo 9 front, 10 front (T. 감포 9 앞, 10 앞)</td>
-            </tr>
-            <tr>
-                <th>dc:source</th>
-                <td>Fieldwork (현장 조사)</td>
-            </tr>
-            <tr>
-                <th>dc:language</th>
-                <td>Korean (한국어)</td>
-            </tr>
-            <tr>
-                <th>dc:relation</th>
-                <td>—</td>
-            </tr>
-            <tr>
-                <th>dc:coverage</th>
-                <td>Naega-myeon, Ganghwa-gun, Gyeonggi-do, Republic of Korea (Gyeonggi/Incheon) / 1981 (대한민국 경기도 강화군 내가면 (경기·인천) / 1981년)</td>
-            </tr>
-            <tr>
-                <th>dc:rights</th>
-                <td>Copyright The Academy of Korean Studies. All Rights Reserved. (저작권 © 한국학중앙연구원. 모든 권리 보유.)</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- TAB 2: MODS -->
-    <div id="mods" class="tab-content">
-        <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;mods xmlns="http://www.loc.gov/mods/v3" 
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"&gt;
-
-  &lt;titleInfo&gt;
-    &lt;title&gt;Bari / Abandoned Princess (바리공주)&lt;/title&gt;
-  &lt;/titleInfo&gt;
-
-  &lt;name type="personal"&gt;
-    &lt;namePart&gt;Cho Dong-il&lt;/namePart&gt;
-    &lt;role&gt;&lt;roleTerm&gt;Researcher&lt;/roleTerm&gt;&lt;/role&gt;
-  &lt;/name&gt;
-  &lt;name type="personal"&gt;
-    &lt;namePart&gt;Song Bum-im&lt;/namePart&gt;
-    &lt;role&gt;&lt;roleTerm&gt;Contributor&lt;/roleTerm&gt;&lt;/role&gt;
-  &lt;/name&gt;
-
-  &lt;typeOfResource&gt;Text/Audio&lt;/typeOfResource&gt;
-  &lt;genre&gt;Korean shamanic song&lt;/genre&gt;
-
-  &lt;originInfo&gt;
-    &lt;publisher&gt;The Academy of Korean Studies&lt;/publisher&gt;
-    &lt;dateCreated&gt;1981-10-09&lt;/dateCreated&gt;
-  &lt;/originInfo&gt;
-
-  &lt;language&gt;
-    &lt;languageTerm&gt;Korean&lt;/languageTerm&gt;
-  &lt;/language&gt;
-
-  &lt;abstract&gt;
-    A shamanic song about Princess Bari's journey to save her parents after being abandoned at birth.
-  &lt;/abstract&gt;
-
-  &lt;subject&gt;
-    &lt;topic&gt;Shamanic Songs&lt;/topic&gt;
-    &lt;topic&gt;Princess Bari&lt;/topic&gt;
-    &lt;topic&gt;Korean Shamanism&lt;/topic&gt;
-    &lt;topic&gt;Oral Literature&lt;/topic&gt;
-  &lt;/subject&gt;
-
-  &lt;identifier&gt;POKS.GUBI.GUBI.1_7694&lt;/identifier&gt;
-
-  &lt;accessCondition&gt;
-    Copyright The Academy of Korean Studies. All Rights Reserved.
-  &lt;/accessCondition&gt;
-
-&lt;/mods&gt;</code></pre>
-    </div>
-
-    <!-- TAB 3: VRA CORE -->
-    <div id="vra-core" class="tab-content">
-        <p><em>VRA Core record coming soon.</em></p>
-    </div>
-
+    <p>Add your metadata records content, tables, or descriptions here.</p>
 </div>
-
-<!-- JavaScript to Switch Tabs -->
-<script>
-    function openTab(evt, tabName) {
-        // Hide all tab content
-        const tabContents = document.getElementsByClassName("tab-content");
-        for (let i = 0; i < tabContents.length; i++) {
-            tabContents[i].classList.remove("active");
-        }
-
-        // Deactivate all tab buttons
-        const tabBtns = document.getElementsByClassName("tab-btn");
-        for (let i = 0; i < tabBtns.length; i++) {
-            tabBtns[i].classList.remove("active");
-        }
-
-        // Show selected tab and set button as active
-        document.getElementById(tabName).classList.add("active");
-        evt.currentTarget.classList.add("active");
-    }
-</script>
 
 </body>
 </html>
