@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muga Project</title>
-
+    <title>Muga Project - Home</title>
     <style>
         body {
             margin: 0;
@@ -19,10 +18,9 @@
             align-items: center;
             padding: 12px 20px;
             gap: 10px;
-            flex-wrap: wrap;
         }
 
-        .navbar a {
+        .navbar a, .dropdown .dropbtn {
             color: white;
             text-decoration: none;
             padding: 8px 14px;
@@ -30,9 +28,13 @@
             font-weight: bold;
             border-radius: 4px;
             transition: background-color .2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
         }
 
-        .navbar a:hover {
+        .navbar a:hover, .dropdown:hover .dropbtn {
             background-color: #34495e;
             color: #f1c40f;
         }
@@ -43,26 +45,26 @@
             display: inline-block;
         }
 
-        /* Dropdown Content (Hidden by Default) */
+        /* Dropdown Content */
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
             background-color: #2c3e50;
             min-width: 180px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            border-radius: 4px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
             z-index: 1000;
-            padding: 6px 0;
+            border-radius: 0 0 4px 4px;
+            top: 100%;
+            left: 0;
         }
 
-        /* Links inside the Dropdown */
         .dropdown-content a {
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
             display: block;
             border-radius: 0;
-            padding: 10px 16px;
-            white-space: nowrap;
+            font-weight: normal;
         }
 
         .dropdown-content a:hover {
@@ -70,14 +72,13 @@
             color: #f1c40f;
         }
 
-        /* Show the Dropdown Menu on Hover */
         .dropdown:hover .dropdown-content {
             display: block;
         }
 
-        /* Page Content */
+        /* Content Container */
         .content {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
             padding: 30px;
             background: white;
@@ -87,28 +88,31 @@
 
         h1 {
             color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
         }
 
         p {
             color: #555;
+            line-height: 1.6;
         }
     </style>
 </head>
-
 <body>
 
 <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="about-project.html">About the Project</a>
     <a href="methodology.html">Methodology</a>
-
-    <!-- Metadata Records Dropdown -->
+    
+    <!-- Dropdown Menu -->
     <div class="dropdown">
-        <a href="metadata-records.html">Metadata Records ▾</a>
+        <button class="dropbtn">Metadata Records &#9662;</button>
         <div class="dropdown-content">
-            <a href="dublin-core.html">Dublin Core</a>
-            <a href="mods.html">MODS</a>
-            <a href="vra-core.html">VRA Core</a>
+            <a href="metadata-records.html">All Records</a>
+            <a href="metadata-records.html#dublin-core">Dublin Core</a>
+            <a href="metadata-records.html#mods">MODS</a>
+            <a href="metadata-records.html#vra-core">VRA Core</a>
         </div>
     </div>
 
@@ -119,8 +123,8 @@
 </nav>
 
 <div class="content">
-    <h1>Muga Project</h1>
-    <p>Digital Humanities and Metadata Practicum</p>
+    <h1>Welcome to the Muga Project</h1>
+    <p>This is the main landing page for the Muga Project repository. Use the navigation menu above to access metadata schema records (Dublin Core, MODS, VRA Core), project methodologies, and research findings.</p>
 </div>
 
 </body>
