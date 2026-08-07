@@ -19,10 +19,9 @@
             align-items: center;
             padding: 12px 20px;
             gap: 10px;
-            flex-wrap: wrap;
         }
 
-        .navbar a {
+        .navbar a, .dropdown .dropbtn {
             color: white;
             text-decoration: none;
             padding: 8px 14px;
@@ -30,17 +29,56 @@
             font-weight: bold;
             border-radius: 4px;
             transition: background-color .2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
         }
 
-        .navbar a:hover {
+        .navbar a:hover, .dropdown:hover .dropbtn {
             background-color: #34495e;
             color: #f1c40f;
         }
 
+        /* Dropdown Container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2c3e50;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 0 0 4px 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 0;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #34495e;
+            color: #f1c40f;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /* Page Content */
         .content {
-            max-width: 1000px;
-            margin: 50px auto;
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 30px;
             background: white;
             border-radius: 8px;
@@ -53,30 +91,36 @@
             padding-bottom: 10px;
         }
 
-        p {
+        p.description {
             color: #555;
             line-height: 1.6;
+            margin-bottom: 25px;
         }
 
         /* Metadata Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+        }
+
         .metadata-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .metadata-table th, 
         .metadata-table td {
             border: 1px solid #ddd;
-            padding: 12px 15px;
+            padding: 12px;
             text-align: left;
+            vertical-align: top;
         }
 
         .metadata-table th {
             background-color: #2c3e50;
             color: white;
             font-weight: bold;
+            white-space: nowrap;
         }
 
         .metadata-table tr:nth-child(even) {
@@ -87,15 +131,32 @@
             background-color: #f1f1f1;
         }
 
-        /* Tag Styling for Metadata Elements */
+        .dc-element {
+            font-family: monospace;
+            font-weight: bold;
+            color: #2980b9;
+            white-space: nowrap;
+        }
+
         .tag {
             display: inline-block;
-            background-color: #e0e0e0;
-            color: #333;
+            background-color: #e2e8f0;
+            color: #2d3748;
             padding: 3px 8px;
-            border-radius: 3px;
+            border-radius: 4px;
             font-size: 12px;
             margin-right: 5px;
+            margin-bottom: 4px;
+        }
+
+        .external-link {
+            color: #2980b9;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -105,7 +166,15 @@
     <a href="index.html">Home</a>
     <a href="about-project.html">About the Project</a>
     <a href="methodology.html">Methodology</a>
-    <a href="metadata-records.html">Metadata Records</a>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Metadata Records &#9662;</button>
+        <div class="dropdown-content">
+            <a href="metadata-records.html">Dublin Core Schema</a>
+            <a href="#">Record Collections</a>
+        </div>
+    </div>
+
     <a href="digital-humanities.html">Digital Humanities</a>
     <a href="findings.html">Findings</a>
     <a href="about-me.html">About Me</a>
@@ -114,41 +183,97 @@
 
 <div class="content">
     <h1>Metadata Records</h1>
-    <p>This section contains the metadata schema and structured records collected for the Muga Project.</p>
+    <p class="description">Structured metadata cataloged using the 15 core elements of the <strong>Dublin Core Metadata Element Set (DCMES)</strong> for the Muga Project.</p>
 
-    <!-- Example Metadata Table -->
-    <table class="metadata-table">
-        <thead>
-            <tr>
-                <th>Identifier</th>
-                <th>Title</th>
-                <th>Creator / Source</th>
-                <th>Date</th>
-                <th>Format / Type</th>
-                <th>Keywords</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>REC-001</strong></td>
-                <td>Sample Record Title 1</td>
-                <td>Project Collection</td>
-                <td>2026-08-01</td>
-                <td>Text / Digital Document</td>
-                <td><span class="tag">Muga</span><span class="tag">History</span></td>
-            </tr>
-            <tr>
-                <td><strong>REC-002</strong></td>
-                <td>Sample Record Title 2</td>
-                <td>Archive Repository</td>
-                <td>2026-08-05</td>
-                <td>Image / Map</td>
-                <td><span class="tag">Metadata</span><span class="tag">DH</span></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="metadata-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Dublin Core Element</th>
+                    <th style="width: 80%;">Value / Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="dc-element">dc:title</td>
+                    <td><strong>Bari / Abandoned Princess (바리공주)</strong></td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:creator</td>
+                    <td>Cho Dong-il, Chang Won-chul, Suh Yong-sook, Shin Eun-kyung, and Lee Jong-ju (조동일, 장원철, 서영숙, 신은경, 이종주)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:subject</td>
+                    <td>
+                        <span class="tag">Shamanic Songs</span>
+                        <span class="tag">Princess Bari</span>
+                        <span class="tag">Korean Shamanism</span>
+                        <span class="tag">Oral Literature</span>
+                        <span class="tag">무가</span>
+                        <span class="tag">바리공주</span>
+                        <span class="tag">한국 무속신앙</span>
+                        <span class="tag">구비문학</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:description</td>
+                    <td>
+                        A shamanic song about the journey of Princess Bari to save her parents, even though she was abandoned by them at birth.<br>
+                        <a href="https://www.youtube.com/watch?v=zRT3Lt0ooKA" target="_blank" class="external-link">https://www.youtube.com/watch?v=zRT3Lt0ooKA</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:publisher</td>
+                    <td>The Academy of Korean Studies (AKS) (한국 구비문학 대계)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:contributor</td>
+                    <td>Song Bum-im (송분임)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:date</td>
+                    <td>1981-10-09</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:type</td>
+                    <td>Korean shamanic song (무가)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:format</td>
+                    <td>Text/Audio (글/오디오)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:identifier</td>
+                    <td>
+                        <strong>Primary System ID:</strong> POKS.GUBI.GUBI.1_7694<br>
+                        <strong>Local Code:</strong> Gampo-eup Muga 2 (감포읍 무가 2)<br>
+                        <strong>Tape Number:</strong> T. Gampo 9 front, 10 front (T. 감포 9 앞, 10 앞)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:source</td>
+                    <td>Fieldwork (현장 조사)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:language</td>
+                    <td>Korean (한국어)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:relation</td>
+                    <td><em>N/A</em></td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:coverage</td>
+                    <td>Naega-myeon, Ganghwa-gun, Gyeonggi-do, Republic of Korea (Gyeonggi/Incheon) / 1981 (대한민국 경기도 강화군 내가면 (경기·인천) / 1981년)</td>
+                </tr>
+                <tr>
+                    <td class="dc-element">dc:rights</td>
+                    <td>Copyright The Academy of Korean Studies. All Rights Reserved. (저작권 © 한국학중앙연구원. 모든 권리 보유.)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 </body>
 </html>
-
