@@ -10,34 +10,55 @@
 <body>
 
   <!-- NAVBAR SECTION -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-5" data-bs-theme="dark">
     <div class="container-fluid">
       
-      <!-- Brand Logo & Title (Links to Homepage) -->
+      <!-- BRAND (왼쪽: 브랜드 텍스트 + 비디오 로고) -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <span class="me-2 fw-semibold">Korean Shamanic Songs (Muga) Project</span>
-        <!-- Replace 'your-video.mp4' with your actual video filename in GitHub -->
-        <video width="30" height="24" autoplay loop muted playsinline class="d-inline-block">
+        <!-- GitHub에 올린 실제 비디오 파일명으로 변경하세요 -->
+        <video width="30" height="24" autoplay loop muted playsinline class="d-inline-block align-text-top">
           <source src="your-video.mp4" type="video/mp4">
         </video>
       </a>
 
-      <!-- Mobile Hamburger Menu Button -->
+      <!-- 모바일용 토글 버튼 -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Navigation Links -->
+      <!-- MENU ITEMS (오른쪽 정렬) -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="About.html">About</a>
+            <a class="nav-link active" aria-current="page" href="about.html">About the Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="metadata-records.html">Metadata Records</a>
+            <a class="nav-link" href="methodology.html">Methodology</a>
+          </li>
+          <!-- Metadata Records 드롭다운 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="metadata-records.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Metadata Records
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="metadata-records.html">View Records</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="digital-humanities.html">Digital Humanities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="findings.html">Findings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-me.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">References</a>
           </li>
         </ul>
       </div>
@@ -52,21 +73,16 @@
 
         <h1 class="mb-4">About the Project</h1>
 
-        <p class="lh-base">
-          I started to get engaged in the project because, at the time I decided to do a field experience/internship, 
-          I was interested in digital archives and metadata. So, I decided to contact Kayo Dena, the head of the 
-          Margery Somers Foster Center and Librarian for Women’s, Gender, and Sexuality Studies at the Mabel Smith 
-          Douglass Library. After the conversation I had with her, I thought it would be interesting to design my own 
-          practicum, combining my interests with what I learned from the previous courses I took. By the time I talked 
-          to Kayo, I was interested in digital archives, metadata, and programming, and I wanted to develop more skills 
-          in these areas. I thought it was a great opportunity. Still, I wanted to cover the topic of women’s, gender, 
-          and sexuality, as this was also a topic I was interested in. I recalled being interested in feminism in 
-          Korean society and oppression within that society. I decided to work with a Korean Shamanic song (muga) 
-          because I remembered my mother was interested in muga and how she enjoyed watching performances multiple times. 
-          At the same time, I thought it was a great opportunity for me to learn about my own culture and historical 
-          background regarding this topic. I thought it would be interesting to learn about the muga from the late 
-          Joseon Dynasty, especially from the 17th to 19th centuries, because that is when Neo-Confucianism impacted 
-          society and gender roles within it. I wanted to see how they are reflected in these texts.
+        <p class="lh-base mb-3">
+          My engagement with this project began when I decided to pursue a field experience/internship focused on digital archives and metadata. I reached out to Kayo Denda, Head of the Margery Somers Foster Center and Librarian for Women’s, Gender, and Sexuality Studies at the Mabel Smith Douglass Library.
+        </p>
+
+        <p class="lh-base mb-3">
+          Following our conversation, I saw an exciting opportunity to design my own practicum—one that integrated my existing coursework with my growing interests in digital archives, metadata, and programming. At the same time, I wanted to anchor my work in women’s, gender, and sexuality studies, particularly focusing on gender dynamics and societal structures in Korea.
+        </p>
+
+        <p class="lh-base mb-3">
+          I chose to work with Korean Shamanic songs (<em>muga</em>), inspired partly by my mother’s lifelong appreciation for <em>muga</em> performances. This project provided a meaningful avenue to explore my own cultural heritage while examining historical primary sources. Specifically, I focused on <em>muga</em> from the late Joseon Dynasty (17th to 19th centuries)—a period when Neo-Confucianism deeply reshaped Korean society and traditional gender roles—to analyze how these cultural transformations are reflected in the texts.
         </p>
 
       </div>
