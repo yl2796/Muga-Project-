@@ -10,29 +10,43 @@
   <body class="bg-light">
 
     <!-- DARK NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
       <div class="container-fluid px-4">
+        
+        <!-- SITE BRAND & VIDEO LOGO -->
+        <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+          <video width="30" height="24" autoplay loop muted playsinline class="d-inline-block me-2">
+            <source src="your-video.mp4" type="video/mp4">
+          </video>
+          <span class="fw-semibold fs-6">Korean Shamanic Songs (Muga) Project</span>
+        </a>
+
+        <!-- MOBILE TOGGLE BUTTON -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- NAVIGATION LINKS -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About the Project</a>
+              <a class="nav-link" href="About.html">About the Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Methodology</a>
             </li>
             
-            <!-- UPDATED METADATA RECORDS DROPDOWN -->
+            <!-- METADATA RECORDS DROPDOWN -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="metadata-records.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Metadata Records
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="metadata-records.html">All Records</a></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Dublin Core</a></li>
                 <li><a class="dropdown-item" href="#">MODS</a></li>
                 <li><a class="dropdown-item" href="#">VRA Core</a></li>
@@ -61,7 +75,9 @@
       <div class="card p-5 border-0 shadow-sm rounded-3">
         <h1 class="fw-bold text-dark mb-3">Welcome to the Muga Project</h1>
         <hr class="text-secondary opacity-25">
-        <p class="mt-3">.</p>
+        <p class="mt-3 lh-base">
+          This digital archive explores Korean Shamanic songs (muga) from the late Joseon Dynasty, focusing on digital metadata standards, historical gender roles, and digital humanities methods.
+        </p>
       </div>
     </div>
 
