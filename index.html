@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Muga Project - Home</title>
+    <title>About the Project – Muga Project</title>
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
@@ -12,6 +12,14 @@
     <!-- DARK NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
       <div class="container-fluid px-4">
+
+        <!-- BRAND (VIDEO LOGO + TITLE) -->
+        <a class="navbar-brand d-flex align-items-center me-4" href="index.html">
+          <video width="30" height="24" autoplay loop muted playsinline class="d-inline-block align-text-top me-2">
+            <source src="your-video.mp4" type="video/mp4">
+          </video>
+          <span class="fw-semibold fs-6">Korean Shamanic Songs (Muga) Project</span>
+        </a>
 
         <!-- MOBILE TOGGLE BUTTON -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +30,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="About.html">About the Project</a>
+              <a class="nav-link active" aria-current="page" href="About.html">About the Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Methodology</a>
@@ -60,16 +68,17 @@
       </div>
     </nav>
 
-    <!-- CENTERED WHITE CONTENT CARD -->
-    <div class="container my-5" style="max-width: 950px;">
+    <!-- CENTERED WHITE CONTENT CARD WITH FULL SINGLE PARAGRAPH -->
+    <main class="container my-5" style="max-width: 950px;">
       <div class="card p-5 border-0 shadow-sm rounded-3">
-        <h1 class="fw-bold text-dark mb-3">Welcome to the Muga Project</h1>
-        <hr class="text-secondary opacity-25">
-        <p class="mt-3 lh-base">
-          This digital archive explores Korean Shamanic songs (muga) from the late Joseon Dynasty, focusing on digital metadata standards, historical gender roles, and digital humanities methods.
+        <h1 class="fw-bold text-dark mb-4">About the Project</h1>
+        <hr class="text-secondary opacity-25 mb-4">
+        
+        <p class="lh-base fs-6 text-secondary">
+I started to get engaged in the project because, at the time I decided to do a field experience/internship, I was interested in digital archives and metadata. So, I decided to contact Kayo Dena, the head of the Margery Somers Foster Center and Librarian for Women’s, Gender, and Sexuality Studies at the Mabel Smith Douglass Library. After the conversation I had with her, I thought it would be interesting to design my own practicum, combining my interests with what I learned from the previous courses I took. By the time I talked to Kayo, I was interested in digital archives, metadata, and programming, and I wanted to develop more skills in these areas. I thought it was a great opportunity. Still, I wanted to cover the topic of women’s, gender, and sexuality, as this was also a topic I was interested in. I recalled being interested in feminism in Korean society and oppression within that society. I decided to work with a Korean Shamanic song (muga) because I remembered my mother was interested in muga and how she enjoyed watching performances multiple times. At the same time, I thought it was a great opportunity for me to learn about my own culture and historical background regarding this topic. I thought it would be interesting to learn about the muga from the late Joseon Dynasty, especially from the 17th to 19th centuries, because that is when Neo-Confucianism impacted society and gender roles within it. I wanted to see how they are reflected in these texts.
         </p>
       </div>
-    </div>
+    </main>
 
     <!-- Bootstrap 5.3 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
