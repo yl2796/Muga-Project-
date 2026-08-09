@@ -9,17 +9,11 @@
 </head>
 <body>
 
-  <!-- ========================================================= -->
-  <!-- NAVBAR SECTION                                           -->
-  <!-- Uses the <nav class="navbar bg-body-tertiary"> snippet  -->
-  <!-- ========================================================= -->
+  <!-- NAVBAR SECTION -->
   <nav class="navbar bg-body-tertiary mb-5">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <!-- 1. Text first -->
         <span class="me-2">Korean Shamanic Songs (Muga) Project</span>
-        
-        <!-- 2. Video second (Replaces Bootstrap logo img tag) -->
         <video width="30" height="24" autoplay loop muted playsinline class="d-inline-block">
           <source src="your-video.mp4" type="video/mp4">
         </video>
@@ -27,30 +21,28 @@
     </div>
   </nav>
 
-  <!-- ========================================================= -->
-  <!-- MAIN CONTENT SECTION                                      -->
-  <!-- Place your full text here, OUTSIDE and BELOW the navbar   -->
-  <!-- ========================================================= -->
+  <!-- MAIN CONTENT SECTION -->
   <main class="container mb-5">
     <div class="row justify-content-center">
       <div class="col-lg-8">
 
-        <h1 class="mb-4">Project Overview</h1>
+        <h1 class="mb-4">About the Project</h1>
 
-        <p class="lead mb-4">
-          I started to get engaged in the project because, at the time I decided to do a field experience/internship, I was interested in digital archives and metadata. So, I decided to contact Kayo Dena, the head of the Margery Somers Foster Center and Librarian for Women’s, Gender, and Sexuality Studies at the Mabel Smith Douglass Library.
-        </p>
-
-        <p class="mb-4">
-          After the conversation I had with her, I thought it would be interesting to design my own practicum, combining my interests with what I learned from the previous courses I took. By the time I talked to Kayo, I was interested in digital archives, metadata, and programming, and I wanted to develop more skills in these areas. I thought it was a great opportunity. Still, I wanted to cover the topic of women’s, gender, and sexuality, as this was also a topic I was interested in.
-        </p>
-
-        <p class="mb-4">
-          I recalled being interested in feminism in Korean society and oppression within that society. I decided to work with a Korean Shamanic song (muga) because I remembered my mother was interested in muga and how she enjoyed watching performances multiple times. At the same time, I thought it was a great opportunity for me to learn about my own culture and historical background regarding this topic.
-        </p>
-
-        <p class="mb-4">
-          I thought it would be interesting to learn about the muga from the late Joseon Dynasty, especially from the 17th to 19th centuries, because that is when Neo-Confucianism impacted society and gender roles within it. I wanted to see how they are reflected in these texts.
+        <p class="lh-base">
+          I started to get engaged in the project because, at the time I decided to do a field experience/internship, 
+          I was interested in digital archives and metadata. So, I decided to contact Kayo Dena, the head of the 
+          Margery Somers Foster Center and Librarian for Women’s, Gender, and Sexuality Studies at the Mabel Smith 
+          Douglass Library. After the conversation I had with her, I thought it would be interesting to design my own 
+          practicum, combining my interests with what I learned from the previous courses I took. By the time I talked 
+          to Kayo, I was interested in digital archives, metadata, and programming, and I wanted to develop more skills 
+          in these areas. I thought it was a great opportunity. Still, I wanted to cover the topic of women’s, gender, 
+          and sexuality, as this was also a topic I was interested in. I recalled being interested in feminism in 
+          Korean society and oppression within that society. I decided to work with a Korean Shamanic song (muga) 
+          because I remembered my mother was interested in muga and how she enjoyed watching performances multiple times. 
+          At the same time, I thought it was a great opportunity for me to learn about my own culture and historical 
+          background regarding this topic. I thought it would be interesting to learn about the muga from the late 
+          Joseon Dynasty, especially from the 17th to 19th centuries, because that is when Neo-Confucianism impacted 
+          society and gender roles within it. I wanted to see how they are reflected in these texts.
         </p>
 
       </div>
